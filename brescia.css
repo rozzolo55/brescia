@@ -1,0 +1,69 @@
+body{
+    background-color: lightblue;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+div{
+    background-color: lightcyan;
+    padding: 5px;
+}
+
+#header, #footer, #crediti{
+    grid-column: span 7;
+}
+
+.titolo, #crediti{
+    text-align: center;
+}
+
+#content{
+    grid-column: span 6;
+}
+
+#menu, #content{
+    padding-bottom: 20px;
+}
+
+img{
+    width: 400px;
+    border-style: solid;
+    border-color: cornflowerblue;
+}
+
+em{
+    font-size: 15px;
+}
+
+.paragrafo{
+    margin: 30px;
+}
+
+.argomento{
+    margin: 15px;
+}
+
+#allaVittoria{
+    margin-right: 75px;
+}
+
+#crediti{
+    color: dimgrey;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 300px;
+    }
+
+    #allaVittoria{
+        text-align: center;
+        margin: 20px;
+    }
+}
